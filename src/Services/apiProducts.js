@@ -95,7 +95,7 @@ export async function getProducts({ category, group, filters, sortBy, page }) {
 
   const { data: products, count, error } = await query;
 
-  // اتصال محصولات به فیلترها
+  // for filters
   let sidebarProductsQuery = supabase.from("Products").select("id");
 
   if (category) {
@@ -149,3 +149,4 @@ export async function getProduct(id) {
 
   return data;
 }
+
