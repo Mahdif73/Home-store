@@ -16,7 +16,7 @@ function Item({ product }) {
       </div>
       <div className="p-[0.5rem_1.25rem_0.2rem] flex flex-col grow">
         <div className="my-[0.25rem_0.75rem]">
-          <Link to={`/products/details/${product?.id}`}>
+          <Link to={`/products/details/${product.id}`}>
             <p className="text-sm font-semibold line-clamp-2 text-(--text-color)">
               {title}
             </p>
