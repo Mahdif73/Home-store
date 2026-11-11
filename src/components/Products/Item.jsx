@@ -6,7 +6,7 @@ function Item({ product }) {
   return (
     <li className="flex flex-col justify-center bg-(--body-color) rounded-3xl cursor-pointer hover:border hover:border-(--border-color) hover:shadow-(--shadow-sm) ">
       <div className="relative w-full overflow-hidden p-[0.25rem_0.25rem_0.25rem]">
-        <Link to={`/products/details/${id}`}>
+        <Link to={`/products/details/${product.id}`}>
           <img
             src={image}
             className={`block rounded-[1.25rem] ${!available ? "grayscale-80" : ""}`}
