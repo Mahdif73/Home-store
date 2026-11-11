@@ -4,7 +4,7 @@ import { useRecovery } from "../components/Authentication/useRecovery";
 import Button from "../components/main/Button";
 
 function Forgot() {
-  const [email, setEmail] = useState("kir@gmail.com");
+  const [email, setEmail] = useState("");
   const { recovery, isPending } = useRecovery();
 
   useEffect(function () {
