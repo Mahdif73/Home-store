@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { faDigitsNum, formatCurrency } from "../../utils/helpers";
 
 function Item({ product }) {
-  const { title, image, price,  offPrice, discount, available } = product;
+  const { title, image, price, offPrice, discount, available } = product;
   return (
     <li className="flex flex-col justify-center bg-(--body-color) rounded-3xl cursor-pointer hover:border hover:border-(--border-color) hover:shadow-(--shadow-sm) ">
       <div className="relative w-full overflow-hidden p-[0.25rem_0.25rem_0.25rem]">
