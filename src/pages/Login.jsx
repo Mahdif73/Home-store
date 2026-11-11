@@ -17,8 +17,8 @@ function Login() {
     };
   }, []);
 
-  const [email, setEmail] = useState("first@gmail.com");
-  const [password, setPassword] = useState("@Ww12345");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const { login, isPending } = useLogin();
   const [visible, setVisible] = useState(false);
 
