@@ -51,7 +51,7 @@ function Details() {
   }
 
   async function handleAddToCart() {
-    const session = await getCreateOrderCode(user.id);
+    const session = await getCreateOrderCode(user?.id);
     if (isColors && !selectedColor)
       return toast.error("لطفا رنگ کالای مورد نظر را انتخاب کنید");
     if (isSize && !selectedSize)
@@ -61,7 +61,7 @@ function Details() {
       const newQuantity = selectItem.quantity + 1;
 
       updateCart({
-        id: selectItem.id,
+        id: selectItem?.id,
         quantity: newQuantity,
         totalPrice: selectItem.price * newQuantity,
         totalOffPrice: selectItem.offPrice * newQuantity,
