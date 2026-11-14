@@ -19,8 +19,9 @@ function Panel({ mobileMode = false }) {
             <li
               key={menu.key}
               onMouseEnter={() => setActiveMenu(menu.key)}
-              className={` ${mobileMode ? "border-0 rounded-none" : "border last:rounded-[0_0_1rem_0]"} px-4 py-6 border-(--border-color) text-(--text-color-light) transition delay-25 hover:border hover:border-(--border-color) hover:text-(--back-color) `}
-            >
+                onClick={() => setActiveMenu(menu.key)}
+             className={` ${mobileMode ? `rounded-none ${activeMenu === menu.key ? "border border-(--border-color)" : "border-0 "}` : "border last:rounded-[0_0_1rem_0]"} px-4 py-6 border-(--border-color) text-(--text-color-light) transition delay-25 hover:border hover:border-(--border-color) hover:text-(--back-color) `}
+              >
               {menu.title}
             </li>
           ))}
