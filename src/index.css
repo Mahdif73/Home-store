@@ -87,7 +87,6 @@
 /* //////////////////// */
 
 @theme {
-  /* --breakpoint-xs: 340px; */
   --breakpoint-xs: 360px;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -169,7 +168,6 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--body-color) !important;
-  /* background: var(--back-color) !important; */
 }
 
 .discount-button-next,
@@ -211,17 +209,6 @@
     max-width: 340px;
   }
 }
-
-/* @media screen and (min-width: 400px) {
-  .home-container {
-    max-width: 580px;
-    height: 155px;
-  }
-
-  .container {
-    max-width: 400px;
-  }
-} */
 
 @media screen and (min-width: 576px) {
   .home-container {
