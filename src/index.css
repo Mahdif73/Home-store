@@ -87,7 +87,7 @@
 /* //////////////////// */
 
 @theme {
-  --breakpoint-xs: 270px;
+  --breakpoint-xs: 310px;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
@@ -199,14 +199,14 @@
 /* //////////////////////////////////// */
 
 /* RESPONSIVE */
-@media screen and (min-width: 270px) {
+@media screen and (min-width: 310px) {
   .home-container {
-    max-width: 250px;
+    max-width: 290px;
     height: 155px;
   }
 
   .container {
-    max-width: 260px;
+    max-width: 290px;
   }
 }
 
