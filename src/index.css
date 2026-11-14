@@ -87,7 +87,7 @@
 /* //////////////////// */
 
 @theme {
-  --breakpoint-xs: 310px;
+  --breakpoint-xs: 370px;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
@@ -199,27 +199,17 @@
 /* //////////////////////////////////// */
 
 /* RESPONSIVE */
-@media screen and (min-width: 310px) {
+@media screen and (min-width: 370px) {
   .home-container {
-    max-width: 300px;
+    max-width: 360px;
     height: 155px;
   }
 
   .container {
-    max-width: 300px;
+    max-width: 360px;
   }
 }
 
-@media screen and (min-width: 400px) {
-  .home-container {
-    max-width: 580px;
-    height: 155px;
-  }
-
-  .container {
-    max-width: 400px;
-  }
-}
 
 @media screen and (min-width: 576px) {
   .home-container {
