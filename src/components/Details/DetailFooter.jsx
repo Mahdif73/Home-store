@@ -11,18 +11,18 @@ function DetailFooter({ product, selectItem, handleAddToCart, isDetail }) {
   const navigate = useNavigate();
 
   return (
-    <div className="border-t border-t-(--border-color-alt) z-98 fixed bottom-16 left-0 w-full h-23 flex justify-between items-center bg-(--body-color) xs:px-4 sm:px-8 md:px-16 lg:hidden">
-      <div className="sm:min-w-45 flex items-center">
+    <div className="border-t border-t-(--border-color-alt) z-98 fixed bottom-16 left-0 w-full h-23 flex justify-between items-center bg-(--body-color) xs:px-2 sm:px-8 md:px-16 lg:hidden">
+      <div className=" sm:min-w-46 flex flex-col items-center">
         <div className="flex justify-between pb-2 min-h-5">
-          <p className="text-(--text-color-light) text-sm line-through sm:text-base">
+          <p className="text-(--text-color-light) text-xs line-through sm:text-base">
             {offPrice ? formatCurrency(price) : "\u200B"}{" "}
           </p>
-          <span className="text-(--back-color) font-semibold text-base  sm:text-base">
+          <span className="text-(--back-color) font-semibold text-sm sm:text-base">
             {discount > 0 ? faDigitsNum(discount) : ""}
             {discount ? "%" : " "}
           </span>
         </div>
-        <p className="text-base font-bold text-(--back-color) sm:text-lg">
+        <p className="text-sm font-bold text-(--back-color) sm:text-lg">
           {!offPrice ? formatCurrency(price) : formatCurrency(offPrice)}{" "}
         </p>
       </div>
