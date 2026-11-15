@@ -11,7 +11,7 @@ function DetailFooter({ product, selectItem, handleAddToCart, isDetail }) {
   const navigate = useNavigate();
 
   return (
-    <div className="border-t border-t-(--border-color-alt) z-98 fixed bottom-20 left-0 w-full h-23 flex justify-between items-center bg-(--body-color) xs:px-4 sm:px-8 md:px-16 lg:hidden">
+    <div className="border-t border-t-(--border-color-alt) z-98 fixed bottom-16 left-0 w-full h-23 flex justify-between items-center bg-(--body-color) xs:px-4 sm:px-8 md:px-16 lg:hidden">
       <div className="sm:min-w-45 flex items-center">
         <div className="flex justify-between pb-2 min-h-5">
           <p className="text-(--text-color-light) text-sm line-through sm:text-base">
