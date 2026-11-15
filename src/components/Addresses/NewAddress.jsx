@@ -52,12 +52,12 @@ function NewAddress({ onClose, editingAddress = {} }) {
 
   return (
     <form
-      className="bg-(--body-color) p-8"
+      className="bg-(--body-color) xs:p-2 sm:p-4 lg:p-8 "
       onSubmit={handleSubmit(onSubmit, onError)}
     >
       <div className="pt-2 grid grid-rows-1 justify-center md:grid-rows-2 ">
         <div className="flex justify-center gap-x-12 xs:flex-col md:flex-row">
-          <div className="flex flex-col items-start pt-4">
+          <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
               className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
               htmlFor="state"
@@ -65,7 +65,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
               استان
             </label>
             <input
-              className="bg-(--back-color-alt)  text-(--text-color) h-12 w-37.5 px-4"
+              className="bg-(--back-color-alt) text-(--text-color) h-12 w-37.5 px-4"
               type="text"
               id="state"
               disabled={isWorking}
@@ -77,7 +77,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
               {errors?.state?.message}
             </p>
           </div>
-          <div className="flex flex-col items-start pt-4">
+          <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
               className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
               htmlFor="city"
@@ -85,7 +85,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
               شهر
             </label>
             <input
-              className="bg-(--back-color-alt)  text-(--text-color) h-12 w-37.5 px-4"
+              className="bg-(--back-color-alt) text-(--text-color) h-12 w-37.5 px-4"
               type="text"
               id="city"
               {...register("city", {
@@ -96,7 +96,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
               {errors?.city?.message}
             </p>
           </div>
-          <div className="flex flex-col items-start pt-4">
+          <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
               className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
               htmlFor="postCode"
@@ -117,7 +117,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
           </div>
         </div>
         <div className="flex justify-center gap-x-12 xs:flex-col md:flex-row">
-          <div className="flex flex-col items-start pt-4">
+          <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
               className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
               htmlFor="state"
@@ -138,7 +138,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
             </p>
           </div>
 
-          <div className="flex flex-col items-start pt-4">
+          <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
               className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
               htmlFor="postCode"
@@ -159,7 +159,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
           </div>
         </div>
         <div className="new-description">
-          <div className="flex flex-col items-start pt-4">
+          <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
               className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
               htmlFor="address"
@@ -167,7 +167,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
               آدرس
             </label>
             <input
-              className="bg-(--back-color-alt) px-4 xs:h-17.5 xs:w-87.5 sm:w-117.5 md:w-162.5 lg:w-200 xl:w-175"
+              className="bg-(--back-color-alt) px-4 xs:h-17.5 xs:w-80 sm:w-117.5 md:w-162.5 lg:w-200 xl:w-175"
               type="text"
               id="address"
               {...register("address", {
