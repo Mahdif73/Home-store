@@ -51,7 +51,7 @@ function UserComment({ onClose, editingComment = {}, productId, title }) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="pt-2 pb-4 px-8 flex flex-col items-start h-125 w-112.5 bg-(--border-color-alt)"
+      className="pt-2 pb-4 xs:px-3 sm:px-8 flex flex-col items-start h-125 xs:w-80 sm:w-112.5 bg-(--border-color-alt)"
     >
       <h3 className="text-base mb-8 pt-2">ثبت امتیاز و دیدگاه</h3>
       <div>
@@ -68,7 +68,7 @@ function UserComment({ onClose, editingComment = {}, productId, title }) {
           <p className="font-medium">متن دیدگاه : </p>
           <div className="flex flex-col justify-center items-end">
             <textarea
-              className="text-sm my-4 py-4 px-4 resize-none h-50 w-95 bg-(--body-color) outline-0 border-0 rounded-2xl font-[Vazirmatn]"
+              className="text-sm my-4 py-4 px-4 resize-none h-50 xs:w-73 sm:w-95 bg-(--body-color) outline-0 border-0 rounded-2xl font-[Vazirmatn]"
               {...register("comment")}
             />
             <select
