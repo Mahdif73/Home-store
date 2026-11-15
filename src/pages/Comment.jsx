@@ -29,23 +29,25 @@ function Comment() {
   return (
     <div className="rounded-2xl">
       <div>
-        <div className="block rounded-t-2xl py-4  mb-4">
+        <div className="block rounded-t-2xl py-4 mb-4">
           {comments?.length ? (
             comments.map((comment) => (
               <div key={comment.id} className="mb-4">
                 <div className="border-x border-t border-(--border-color) rounded-t-2xl">
-                  <div className="mx-5 py-3 flex justify-between">
-                    <div className="flex items-start gap-4">
+                  <div className="xs:mx-2 sm:mx-5 py-3 flex justify-between items-start md:mx-5">
+                    <div className="flex items-start xs:gap-1 sm:gap-4 xs:max-w-60.5 sm:min-w-90 md:min-w-120">
                       <Link to={`/products/details/${comment.product_id}`}>
-                        <p className="text-(--back-color)">{comment.title}</p>
+                        <p className="xs:text-xs sm:text-sm text-(--back-color)">
+                          {comment.title}
+                        </p>
                       </Link>
                       <StarRating
-                        size={20}
+                        size={14}
                         readOnly="true"
                         defaultRating={comment.userRating}
                       />
                     </div>
-                    <div className="flex gap-6 text-sm">
+                    <div className="flex xs:gap-1.5 sm:gap-6 text-xs sm:text-sm">
                       <Modal>
                         <Modal.Open opens="edit">
                           <Button> ویرایش</Button>
