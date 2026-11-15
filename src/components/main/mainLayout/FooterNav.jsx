@@ -20,7 +20,7 @@ function FooterNav() {
             <li className="relative flex flex-col items-center gap-y-1 text-base text-(--text-color) cursor-pointer hover:text-(--border-color) ">
               <HiOutlineHome className="text-xl" />
 
-              <p className="xs:text-xs">خانه للل</p>
+              <p className="xs:text-xs">خانه</p>
             </li>
           </Link>
           <li className="relative flex flex-col items-center gap-y-1 text-base text-(--text-color) cursor-pointer hover:text-(--border-color) ">
@@ -56,7 +56,7 @@ function FooterNav() {
                   {faDigitsNum(getTotalCartQuantity)}
                 </span>
               )}
-              <p className=" xs:text-xs">سبد خرید </p>
+              <p className=" xs:text-xs">سبد خر </p>
             </li>
           </Link>
           <Link to={"/profile"}>
