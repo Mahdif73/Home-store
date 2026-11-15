@@ -17,8 +17,8 @@ function ProductsSkeleton() {
             <div className="skeleton h-9 w-100"></div>
           </section>
           <div>
-            <div className="flex justify-start gap-2 overflow-x-hidden mb-4 xs:w-100 sm:w-137.5 md:w-182.5 lg:hidden">
-              <div className="skeleton h-8.25 w-125"></div>
+            <div className="flex xs:justify-center sm:justify-start gap-2 overflow-x-hidden mb-4 xs:w-80 sm:w-137.5 md:w-182.5 lg:hidden">
+              <div className="skeleton h-8.25 w-110"></div>
             </div>
             <div className="grid gap-2 xs:grid-cols-1 sm:grid-cols-2 lg:w-162.5 xl:w-204 xl:h-fit xl:grid-cols-3 2xl:w-262">
               {[1, 2, 3, 4, 5].map((i) => (
