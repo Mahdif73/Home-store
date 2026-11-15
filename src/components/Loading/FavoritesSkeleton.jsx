@@ -8,7 +8,7 @@ function FavoritesSkeleton() {
             key={i}
           >
             <div className="w-full overflow-hidden p-[0.25rem_0.25rem_0.25rem]">
-              <div className="skeleton xs:w-93.5 xs:h-98.75 sm:w-63.5 sm:h-50 md:w-86.25 md:h-87.5 lg:w-78.5 xl:w-64.5 xl:h-72.5 2xl:w-84.25 2xl:h-87.5 rounded-2xl"></div>
+              <div className="skeleton xs:w-83.5 xs:h-98.75 sm:w-63.5 sm:h-50 md:w-86.25 md:h-87.5 lg:w-78.5 xl:w-64.5 xl:h-72.5 2xl:w-84.25 2xl:h-87.5 rounded-2xl"></div>
             </div>
 
             <div className="p-[0_1.25rem_0.2rem] flex flex-col grow">
