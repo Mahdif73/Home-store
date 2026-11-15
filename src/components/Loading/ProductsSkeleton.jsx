@@ -7,17 +7,17 @@ function ProductsSkeleton() {
       <section className="container flex gap-x-6 mt-10 font-semibold xs:justify-center lg:justify-start">
         <div className="skeleton w-100 h-6.25"></div>
       </section>
-      <section className="container mt-10 flex justify-center sm:gap-8">
+      <section className="container mt-10 flex justify-center xs:gap-2 sm:gap-8">
         {category && (
           <div className="skeleton none lg:block lg:w-75 lg:h-100"></div>
         )}
 
         <div>
           <section className="justify-start mr-6 mb-8 mt-1 cursor-pointer xs:hidden xs:gap-x-4 xs:text-xs md:text-sm lg:flex lg:gap-x-10">
-            <div className="skeleton h-9 w-90"></div>
+            <div className="skeleton h-9 w-100"></div>
           </section>
           <div>
-            <div className="flex xs:justify-center sm:justify-start gap-2 overflow-x-hidden mb-4 xs:w-90 sm:w-137.5 md:w-182.5 lg:hidden">
+            <div className="flex xs:justify-center sm:justify-start gap-2 overflow-x-hidden mb-4 xs:w-80 sm:w-137.5 md:w-182.5 lg:hidden">
               <div className="skeleton h-8.25 xs:w-80 sm:w-110"></div>
             </div>
             <div className="grid gap-2 xs:grid-cols-1 sm:grid-cols-2 lg:w-162.5 xl:w-204 xl:h-fit xl:grid-cols-3 2xl:w-262">
