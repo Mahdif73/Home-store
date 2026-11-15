@@ -33,10 +33,13 @@ function SearchPage() {
           {search?.map((product) => (
             <li
               key={product.id}
-              className="text-base flex justify-start items-center h-25 gap-12 px-8 border-b border-(--border-color) hover:bg-(--back-color-alt)"
+              className="text-base flex justify-start items-center h-25 gap-12 xs:px-3 sm:px-8 border-b border-(--border-color) hover:bg-(--back-color-alt)"
             >
               <img className="w-22" src={product.image} alt={product.title} />
-              <Link to={`/products/details/${product.id}`}>
+              <Link
+                to={`/products/details/${product.id}`}
+                className="xs:text-xs sm:text-base"
+              >
                 {product.title}
               </Link>
             </li>
