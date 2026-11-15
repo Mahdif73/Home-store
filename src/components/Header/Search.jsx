@@ -28,7 +28,7 @@ function Search() {
       <input
         type="text"
         placeholder="جستجوی محصول مورد نظر ..."
-        className="h-12 text-sm w-full rounded-[7px] px-16 bg-(--border-color-alt) border border-(--border-color)"
+        className="h-12 text-sm w-full rounded-[7px] xs:px-11 sm:px-16 bg-(--border-color-alt) border border-(--border-color)"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         ref={inputEl}
@@ -36,11 +36,11 @@ function Search() {
 
       {searchTerm && search && (
         <ul
-          className="absolute flex flex-col justify-start min-w-100 top-12 text-(--text-color) bg-(--border-color-alt) border border-(--border-color) rounded-[0_0_1.25rem_1.25rem]"
+          className="absolute flex flex-col justify-start sm:min-w-100 top-12 text-(--text-color) bg-(--border-color-alt) border border-(--border-color) rounded-[0_0_1.25rem_1.25rem]"
           ref={closed}
         >
           {search?.length === 0 && (
-            <p className="py-4 px-8 border-b border-(--border-color)">
+            <p className="py-4 px-8 xs:text-sm sm:text-sm">
               هیچ محصولی با این عبارت پیدا نشد
             </p>
           )}
@@ -48,7 +48,7 @@ function Search() {
             search.slice(0, 10).map((product) => (
               <li
                 key={product.id}
-                className="flex flex-col justify-start py-2 px-2 text-(--text-color) bg-(--border-color-alt) min-w-100 top-12 border-b border-(--border-color) last:rounded-[0_0_1.25rem_1.25rem] hover:bg-(--back-color-alt)"
+                className="flex flex-col justify-start py-2 px-2 text-(--text-color) bg-(--border-color-alt) xs:text-sm sm:text-base sm:min-w-100 top-12 border-b border-(--border-color) last:rounded-[0_0_1.25rem_1.25rem] hover:bg-(--back-color-alt)"
               >
                 <Link
                   to={`/products/details/${product.id}`}
