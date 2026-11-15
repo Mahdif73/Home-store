@@ -56,7 +56,7 @@ function FooterNav() {
                   {faDigitsNum(getTotalCartQuantity)}
                 </span>
               )}
-              <p className=" xs:text-xs">سبد خر </p>
+              <p className=" xs:text-xs">سبد خرید</p>
             </li>
           </Link>
           <Link to={"/profile"}>
