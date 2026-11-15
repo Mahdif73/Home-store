@@ -20,7 +20,7 @@ function FooterNav() {
             <li className="relative flex flex-col items-center gap-y-1 text-base text-(--text-color) cursor-pointer hover:text-(--border-color) ">
               <HiOutlineHome className="text-xl" />
 
-              <p className="xs:text-xs">خانه </p>
+              <p className="xs:text-xs">خانه للل</p>
             </li>
           </Link>
           <li className="relative flex flex-col items-center gap-y-1 text-base text-(--text-color) cursor-pointer hover:text-(--border-color) ">
