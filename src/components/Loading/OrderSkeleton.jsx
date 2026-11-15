@@ -22,28 +22,28 @@ function OrderSkeleton() {
             </div>
           </div>
           <div className="border-t border-(--border-color)">
-            <div className="grid grid-cols-[175px_1fr] grid-rows-[160px] text-center border-b border-(--border-color) pt-4 sm:pr-16 md:grid-cols-[180px_1fr]">
-              <div className="skeleton w-35 h-35"></div>
+            <div className="grid xs:grid-cols-[135px_1fr] sm:grid-cols-[175px_1fr] grid-rows-[160px] text-center border-b border-(--border-color) pt-4 sm:pr-16 md:grid-cols-[180px_1fr]">
+              <div className="skeleton mr-2 xs:w-30 sm:w-35 h-35"></div>
               <div className="flex flex-col items-start gap-4 text-base pt-3 xs:text-sm">
-                <div className="skeleton w-50 h-15"></div>
+                <div className="skeleton xs:w-40 sm:w-50 h-15"></div>
               </div>
               <div className="h-10 w-32.5 mt-4 flex justify-center items-center pb-8 gap-x-8">
-                <div className="skeleton  w-35 h-10"></div>
+                <div className="skeleton xs:w-20 sm:w-35 h-10"></div>
               </div>
               <div className="mb-6 w-42.5 sm:w-57.5">
-                <div className="skeleton w-50 h-12.5"></div>
+                <div className="skeleton w-40 h-12.5"></div>
               </div>
             </div>
-            <div className="grid grid-cols-[175px_1fr] grid-rows-[160px] text-center border-b border-(--border-color) pt-4 sm:pr-16 md:grid-cols-[180px_1fr]">
-              <div className="skeleton  w-35 h-35"></div>
+            <div className="grid xs:grid-cols-[135px_1fr] sm:grid-cols-[175px_1fr] grid-rows-[160px] text-center border-b border-(--border-color) pt-4 sm:pr-16 md:grid-cols-[180px_1fr]">
+              <div className="skeleton mr-2 xs:w-30 sm:w-35 h-35"></div>
               <div className="flex flex-col items-start gap-4 text-base pt-3 xs:text-sm">
-                <div className="skeleton w-50 h-15"></div>
+                <div className="skeleton xs:w-40 sm:w-50 h-15"></div>
               </div>
               <div className="h-10 w-32.5 mt-4 flex justify-center items-center pb-8 gap-x-8">
-                <div className="skeleton  w-35 h-10"></div>
+                <div className="skeleton xs:w-20 sm:w-35 h-10"></div>
               </div>
               <div className="mb-6 w-42.5 sm:w-57.5">
-                <div className="skeleton w-50 h-12.5"></div>
+                <div className="skeleton w-40 h-12.5"></div>
               </div>
             </div>
           </div>
