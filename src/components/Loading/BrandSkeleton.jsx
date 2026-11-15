@@ -1,9 +1,6 @@
 function BrandSkeleton() {
   return (
     <div className="container mt-10 flex justify-center">
-      <div className="flex justify-start gap-2 overflow-x-hidden mb-4 xs:w-100 sm:w-137.5 md:w-182.5 lg:hidden">
-        <div className="skeleton h-8.25 w-125"></div>
-      </div>
       <div className="grid gap-2 xs:grid-cols-1 sm:grid-cols-2 lg:w-162.5 xl:w-204 xl:h-fit xl:grid-cols-3 2xl:w-262">
         {[1, 2, 3, 4, 5].map((_, i) => (
           <li
@@ -11,7 +8,7 @@ function BrandSkeleton() {
             key={i}
           >
             <div className="relative w-full overflow-hidden p-[0.25rem_0.25rem_0.25rem]">
-              <div className="skeleton h-85"></div>
+              <div className="skeleton xs:w-81.5 xs:h-92.75 sm:w-63.5 sm:h-45 md:w-86.25 md:h-80.5 lg:w-78.5 xl:w-64.5 xl:h-66.5 2xl:w-84.25 2xl:h-80.5 rounded-2xl"></div>
             </div>
 
             <div className="p-[0_1.25rem_0.2rem] flex flex-col grow">
