@@ -26,15 +26,15 @@ function Contact() {
 
   return (
     <section className="container mt-8 border border-(--border-color-alt) rounded-2xl bg-(--body-color)">
-      <div className="flex justify-center gap-8 my-8 pr-8 xs:flex-col md:flex-row md:items-start md:gap-4 md:px-8 lg:gap-12">
+      <div className="flex justify-center gap-8 my-8 xs:flex-col md:flex-row md:items-start md:gap-4 sm:px-5 md:px-6.5 xl:px-8 lg:gap-12">
         <form
-          className="w-90 text-sm xl:w-105"
+          className="text-sm xl:w-105 xs:text-center md:text-right "
           onSubmit={handleSubmit(onSubmit)}
         >
           <h3 className="text-base mr-4 mb-4">تماس با ما</h3>
           <div>
             <input
-              className="h-13.75 w-[320px] px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
+              className="h-13.75 w-72.5 px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
               type="text"
               id="fullName"
               label="نام و نام خانوادگی"
@@ -51,7 +51,7 @@ function Contact() {
 
           <div>
             <input
-              className="h-13.75 w-[320px] px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
+              className="h-13.75 w-72.5 px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
               type="tel"
               id="phone"
               placeholder="تلفن همراه"
@@ -71,7 +71,7 @@ function Contact() {
           </div>
           <div>
             <input
-              className="h-13.75 w-[320px] px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
+              className="h-13.75 w-72.5 px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
               type="email"
               placeholder=" ایمیل"
               id="email"
@@ -92,7 +92,7 @@ function Contact() {
 
           <div>
             <input
-              className="h-13.75 w-[320px] px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
+              className="h-13.75 w-72.5 px-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
               type="text"
               placeholder="موضوع "
               id="subject"
@@ -109,7 +109,7 @@ function Contact() {
 
           <div>
             <textarea
-              className="resize-none h-50 w-[320px] p-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
+              className="resize-none h-50 w-72.5 p-4 rounded-2xl text-(--text-color) bg-(--back-color-alt) lg:w-90 xl:w-100"
               id="message"
               name="message"
               {...register("message", {
@@ -120,12 +120,13 @@ function Contact() {
               {errors?.message?.message}
             </p>
           </div>
-
-          <Button type="submit" htmlType="contact" disabled={isPending}>
-            ثبت پیام
-          </Button>
+          <div className="flex justify-center">
+            <Button type="submit" htmlType="contact" disabled={isPending}>
+              ثبت پیام
+            </Button>
+          </div>
         </form>
-        <div className="bg-(--border-color-alt) border border-(--border-color) h-fit rounded-2xl pt-4 px-4 mt-4 xs:w-[320px] sm:w-100 md:mt-12 xl:w-112.5">
+        <div className=" bg-(--border-color-alt) border border-(--border-color) h-fit rounded-2xl pt-4 px-4 mt-4 xs:mx-auto md:mx-0 xs:w-77 sm:w-100 md:mt-12 md:w-86 lg:w-98 xl:w-112.5">
           <div className="pt-3 pb-2 flex justify-between items-center border-b border-(--back-color-alt)">
             <p>تلفن :</p>
             <p>09399194933</p>
