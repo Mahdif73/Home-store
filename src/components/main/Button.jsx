@@ -13,7 +13,7 @@ function Button({ children, disabled, onClick, type, htmlType, aria }) {
     filter: base + " text-sm text-(--text-color) gap-4",
     details:
       base +
-      " py-4 h-12.5 bg-(--text-color) text-(--body-color) rounded-[7px] xs:text-sm xs:min-w-28 xs:mr-[0.2rem] sm:mr-[1.2rem] sm:min-w-[160px] sm:text-base disabled:bg-(--text-color-light) disabled:text-(--border-color-alt)",
+      " py-4 h-12.5 bg-(--text-color) text-(--body-color) rounded-[7px] xs:text-xs xs:min-w-28 xs:mr-[0.2rem] sm:mr-[1.2rem] sm:min-w-[160px] sm:text-base disabled:bg-(--text-color-light) disabled:text-(--border-color-alt)",
     order:
       base +
       " bg-(--text-color) text-(--body-color) border-none w-37.5 h-12.5 rounded-[7px] text-base hover:bg-(--back-color)",
