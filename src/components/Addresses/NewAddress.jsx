@@ -59,7 +59,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
         <div className="flex justify-center gap-x-12 xs:flex-col md:flex-row">
           <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
-              className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
+              className="xs:text-sm sm:text-base font-bold xs:pb-1 sm:pb-3 pr-2 hover:(--text-color)"
               htmlFor="state"
             >
               استان
@@ -79,7 +79,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
           </div>
           <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
-              className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
+              className="xs:text-sm sm:text-base font-bold xs:pb-1 sm:pb-3 pr-2 hover:(--text-color)"
               htmlFor="city"
             >
               شهر
@@ -98,7 +98,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
           </div>
           <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
-              className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
+              className="xs:text-sm sm:text-base font-bold xs:pb-1 sm:pb-3 pr-2 hover:(--text-color)"
               htmlFor="postCode"
             >
               کد پستی
@@ -119,7 +119,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
         <div className="flex justify-center gap-x-12 xs:flex-col md:flex-row">
           <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
-              className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
+              className="xs:text-sm sm:text-base font-bold xs:pb-1 sm:pb-3 pr-2 hover:(--text-color)"
               htmlFor="state"
             >
               نام خریدار
@@ -140,7 +140,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
 
           <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
-              className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
+              className="xs:text-sm sm:text-base font-bold xs:pb-1 sm:pb-3 pr-2 hover:(--text-color)"
               htmlFor="postCode"
             >
               شماره همراه
@@ -161,7 +161,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
         <div className="new-description">
           <div className="flex flex-col items-start xs:pt-2 sm:pt-4">
             <label
-              className="text-base font-bold pb-3 pr-2 hover:(--text-color)"
+              className="xs:text-sm sm:text-base font-bold xs:pb-1 sm:pb-3 pr-2 hover:(--text-color)"
               htmlFor="address"
             >
               آدرس
@@ -178,7 +178,7 @@ function NewAddress({ onClose, editingAddress = {} }) {
           </div>
         </div>
       </div>
-      <div className="pt-10 flex justify-center gap-8">
+      <div className="pt-10 flex justify-center xs:gap-5 sm:gap-8">
         <Button type="submit" htmlType="address" disabled={isWorking}>
           ثبت آدرس
         </Button>
